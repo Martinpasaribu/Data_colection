@@ -1,0 +1,51 @@
+GET http://localhost:5000/products
+Content-Type: application/json
+
+
+
+###
+POST  http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "coba 3 coba",
+    "price": 1000000
+}
+
+###
+DELETE  http://localhost:5000/products/4
+Content-Type: application/json
+
+
+###
+
+GET    https://server-sage-seven.vercel.app
+Content-Type: application/json
+
+###
+
+GET https://hvhuqbaexxumyexirpil.supabase.co/rest/v1/Product?select=*  HTTP/1.1
+Content-Type: application/json
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2aHVxYmFleHh1bXlleGlycGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI1NTAwNjUsImV4cCI6MjAxODEyNjA2NX0.VHc0AW_kli9iZVviZ0D9lp8EM8PP7lAw-SDaovf-ewk
+
+
+###
+POST  https://hvhuqbaexxumyexirpil.supabase.co/rest/v1/Product?select=*  HTTP/1.1
+Content-Type: application/json
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2aHVxYmFleHh1bXlleGlycGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI1NTAwNjUsImV4cCI6MjAxODEyNjA2NX0.VHc0AW_kli9iZVviZ0D9lp8EM8PP7lAw-SDaovf-ewk
+
+{
+  
+    "name": "coba coba",
+    "price": "000000"
+}
+
+###
+PATCH  https://hvhuqbaexxumyexirpil.supabase.co/rest/v1/Product?id=eq.4 HTTP/1.1
+Content-Type: application/json
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2aHVxYmFleHh1bXlleGlycGlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI1NTAwNjUsImV4cCI6MjAxODEyNjA2NX0.VHc0AW_kli9iZVviZ0D9lp8EM8PP7lAw-SDaovf-ewk
+
+{
+    "name": "4 yang berubah",
+    "price": "000"
+}
