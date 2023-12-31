@@ -9,7 +9,7 @@ import {
 
 import {getUsers} from "../controllers/UserCont.js";
 import {Register} from "../controllers/RegisterCont.js";
-import {Login} from "../controllers/LoginCont";
+import {Login} from "../controllers/LoginCont.js";
 import {Logout} from "../controllers/LogoutCont.js";
 
 import { verifyToken } from "../middleware/VerifyToken.js";
