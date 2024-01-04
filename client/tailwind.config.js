@@ -24,6 +24,7 @@ module.exports = {
       },
       colors: {
         blue: '#3490dc', // Atau kode warna biru yang Anda inginkan
+        red:  '#fff',
       },
       backgroundSize: {
         'auto': 'auto',

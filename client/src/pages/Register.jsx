@@ -15,13 +15,14 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await axios.post('https://project-05-three.vercel.app/users', {
+      await axios.post('https://datacolection-server.vercel.app/register', {
         name: name,
         email: email,
         password: password,
         confPassword: confPassword,
+        role:role
       });
-      navigate('/');
+      navigate('/login');
     } catch (error) {
       if (error.response) {
         setMsg(error.response.data.msg);

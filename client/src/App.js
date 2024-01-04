@@ -4,6 +4,7 @@ import AddProduct from "./components/AddProduct";
 import EditProduct from "./components/EditProduct";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Dashboard from "./pages/dashboard";
 
 import Awal from "./pages/awal";
 import Navbar from "./components/Navbar";
@@ -18,22 +19,25 @@ function App() {
           <Route path="/edit/:id" element={<EditProduct/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-      
+
+
     </div>
   );
 }
-function Layout() {
-  return (
-    <>
-      <header>
-        <Link to='/'> </Link>
+// function Layout() {
+//   return (
+//     <>
+//       <header>
+//         <Link to='/'> </Link>
 
-      </header>
+//       </header>
 
-      <Outlet />
-    </>
-  );
-}
+//       <Outlet />
+//     </>
+//   );
+// }
+
 
 export default App;

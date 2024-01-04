@@ -16,6 +16,9 @@ Content-Type: application/json
 DELETE  http://localhost:5000/products/4
 Content-Type: application/json
 
+###
+DELETE  https://datacolection-server.vercel.app/logout
+
 
 ###
 
