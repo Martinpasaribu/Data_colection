@@ -12,10 +12,11 @@ export const Navbar = () => {
     const logout = async()  => {
         try {
             setLoggingOut(true);
-            await axios.delete('https://datacolection-server.vercel.app/logout');
-            navigate('/awal');
+            await axios.delete('http://localhost:5000/logout');
+            navigate('/');
         } catch (error) {
           console.log(error);
+          console.log({msg:'error bro'})
         }
         finally {
           setLoggingOut(false); // Set status loggingOut ke false setelah proses logout selesai

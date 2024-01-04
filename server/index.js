@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import ProductRoute from "./routes/ProductRoute.js";
+import cookieParser from "cookie-parser";
 dotenv.config();
 
 const app = express();
@@ -9,10 +10,10 @@ const app = express();
 app.use(cors(
 {
     origin: ["https://client-ten-psi.vercel.app","https://www.postman.com/","http://localhost:3000","https://client-po4.vercel.app","http://localhost:5000"],
-    methods: ["POST", "GET", "PATCH", "DELETE" ], // Perubahan disini ke 'methods'
+    methods: ["POST", "GET", "PATCH", "DELETE","OPTIONS" ], // Perubahan disini ke 'methods'
     credentials: true,
 }));
-
+app.use(cookieParser());
 app.use(express.json());
 app.use(ProductRoute);
 
