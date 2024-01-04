@@ -13,7 +13,7 @@ const Login = () => {
   const Auth  = async(e) =>{
     e.preventDefault();
     setLoading(true);
-    try {
+    try { 
             await  axios.post("https://datacolection-server.vercel.app/login", 
             {
                 email:email,
