@@ -1,21 +1,22 @@
 import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
-import ProductRoute from "./routes/ProductRoute.js";
 import cookieParser from "cookie-parser";
-dotenv.config();
+import router from "./routes/ProductRoute.js";
+import dotenv from "dotenv";
+import cors from "cors";
 
 const app = express();
 
+dotenv.config();
+
 app.use(cors(
 {
-    origin: ["https://client-ten-psi.vercel.app","https://www.postman.com/","http://localhost:3000","https://data-colection.vercel.app","http://localhost:5000"],
+    origin: ["https://www.postman.com","http://localhost:3000","https://data-colection.vercel.app"],
     methods: ["POST", "GET", "PATCH", "DELETE","OPTIONS" ], // Perubahan disini ke 'methods'
     credentials: true,
 }));
 app.use(cookieParser());
 app.use(express.json());
-app.use(ProductRoute);
+app.use(router);
 
 app.use("/", (req, res) => {
     res.send("Server is running");
