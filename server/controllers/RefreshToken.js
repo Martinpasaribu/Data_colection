@@ -33,4 +33,3 @@ export  const refreshToken = async (req, res) => {
         console.log(error)
     }
 }
-
